@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "NoMorePopIn",
+  "version": "0.1.0",
+  "description": "Blocks pop-in dialog boxes and screen overlays - annoying in-page pop ups typically used for newsletters and other sign ups",
+ 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }]
+ 
+}
