@@ -1,4 +1,7 @@
+
 // Setup context menu
 chrome.browserAction.onClicked.addListener(function(tab) {
-	console.log("clicked");
+  chrome.tabs.executeScript({
+    code: 'console.log("clicked");'
+  });
 });
