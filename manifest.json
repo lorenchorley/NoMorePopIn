@@ -5,10 +5,37 @@
   "version": "0.1.0",
   "description": "Blocks pop-in dialog boxes and screen overlays - annoying in-page pop ups typically used for newsletters and other sign ups",
  
-  "content_scripts": [{
-    "css": ["styles.css"],
-    "js": ["content.js"],
-    "matches": ["http://*/*", "https://*/*"]
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "contextMenus",
+	"tabs", 
+	"http://*/*", 
+	"https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "Block a pop in",
+    "default_icon": "icon-48.png"
+  },
+  "icons": {
+    "16": "icon-16.png",
+	"32": "icon-32.png",
+	"48": "icon-48.png",
+	"128": "icon-128.png"
+  },
+  "content_scripts": [
+  {
+    "css": ["styles.com.css"],
+    "matches": ["*://*.com/*"]
+  },
+  {
+    "css": ["styles.co.uk.css"],
+    "matches": ["*://*.co.uk/*"]
+  },
+  {
+    "js": ["pagescript.js"],
+    "matches": ["<all_urls>"]
   }]
  
 }

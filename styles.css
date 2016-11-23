@@ -1,9 +1,0 @@
-html.rocketlanguages.com .full-page-exit-popup-wrapper,
-html.rocketlanguages.com #simplemodal-container,
-html.rocketlanguages.com #simplemodal-overlay {
-	display:none !important;
-}
-
-html.rocketlanguages.com body {
-	overflow:auto !important;
-}

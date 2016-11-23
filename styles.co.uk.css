@@ -1,0 +1,4 @@
+.tripadvisor.co.uk .ui_overlay.ui_modal.pcb,
+.tripadvisor.co.uk .ui_backdrop.dark {
+	display:none !important;
+}

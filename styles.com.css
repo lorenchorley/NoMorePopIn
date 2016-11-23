@@ -1,0 +1,10 @@
+.rocketlanguages.com .full-page-exit-popup-wrapper,
+.rocketlanguages.com #simplemodal-container,
+.rocketlanguages.com #simplemodal-overlay,
+.fodors.com #desktop-popup {
+	display:none !important;
+}
+
+.rocketlanguages.com body {
+	overflow:auto !important;
+}
